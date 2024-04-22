@@ -1,11 +1,15 @@
 import React from 'react';
+import { useTranslation } from './LanguageToggle';
 import '../styles/Home.css';
 
 function Home() {
+    const { language, translations } = useTranslation();
+    const t = translations[language].home;
+
     return (
         <div className="home">
-            <h1>Bienvenue sur mon portfolio</h1>
-            <p>Je suis étudiant en master de développement logiciel.</p>
+            <h1>{t.welcome}</h1>
+            <p>{t.description}</p>
         </div>
     );
 }
