@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "theme": "Thème"
+  },
+  "home": {
+    "welcome": "Bienvenue sur mon portfolio",
+    "description": "Je suis étudiant en master de développement logiciel."
+  },
+  "themeToggle": "Thème",
+  "themeLangage": "Langue",
+  "copyright" : "Copyright © 2024 - Tous droits réservés"
+}

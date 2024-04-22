@@ -2,25 +2,24 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-// import About from './components/About';
-// import Projects from './components/Projects';
-// import Contact from './components/Contact';
+import Footer from './components/Footer';
+import { LanguageProvider } from './components/LanguageToggle';
 
 function App() {
-  return (
-      <div className="App">
-        <Navbar />
-        <main>
-          <Home />
-          {/*<About />*/}
-          {/*<Projects />*/}
-          {/*<Contact />*/}
-        </main>
-        <footer>
-          <p>Copyright © 2024 - Tous droits réservés</p>
-        </footer>
-      </div>
-  );
+    return (
+        <LanguageProvider>
+            <div className="App">
+                <Navbar />
+                <main>
+                    <Home />
+                    {/*<About />*/}
+                    {/*<Projects />*/}
+                    {/*<Contact />*/}
+                </main>
+                <Footer />
+            </div>
+        </LanguageProvider>
+    );
 }
 
 export default App;
