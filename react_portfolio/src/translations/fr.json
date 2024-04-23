@@ -10,7 +10,18 @@
     "welcome": "Bienvenue sur mon portfolio",
     "description": "Je suis étudiant en master de développement logiciel."
   },
+  "contact": {
+    "title" : "Contactez-moi",
+    "phone" : "Téléphone",
+    "mail": "E-Mail",
+    "name" : "Nom",
+    "text" : "Message",
+    "send": "Envoyer",
+    "copiedMessage" : "Copié"
+  },
   "themeToggle": "Thème",
   "themeLangage": "Langue",
-  "copyright" : "Copyright © 2024 - Tous droits réservés"
+  "copyright" : "Copyright © 2024 - Tous droits réservés",
+  "successMessage": "Votre message à été envoyé avec succès",
+  "errorMessage": "Une erreur à été détecté"
 }

@@ -10,7 +10,18 @@
     "welcome": "Welcome to my portfolio",
     "description": "I am a master's student in software development."
   },
+  "contact": {
+    "title" : "Contact",
+    "phone" : "Phone",
+    "mail": "Mail",
+    "name" : "Name",
+    "text" : "Message",
+    "send": "Send",
+    "copiedMessage" : "Copy"
+  },
   "themeToggle": "Theme",
   "themeLangage": "Langage",
-  "copyright" : "Copyright © 2024 - All rights reserved"
+  "copyright" : "Copyright © 2024 - All rights reserved",
+  "successMessage": "Your message has been send with succes",
+  "errorMessage": "Error detected"
 }

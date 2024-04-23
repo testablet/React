@@ -1,0 +1,165 @@
+/* Contact styles */
+.contact {
+    margin-top: 0;
+}
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .contact-container {
+    background-color: #f9f9f9;
+}
+
+.theme-dark .contact-container {
+    background-color: #333333;
+    border: 1px solid #555555;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .contact-card {
+    background-color: #ffffff;
+}
+
+.theme-dark .contact-card {
+    background-color: #444444;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.theme-light .contact-info p {
+    color: #333333;
+}
+
+.theme-dark .contact-info p {
+    color: #ffffff;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.theme-light .contact-info a {
+    color: #007bff;
+}
+
+.theme-dark .contact-info a {
+    color: #4a90e2;
+}
+
+.contact-info strong {
+    color: #000000;
+}
+
+.theme-light .contact-info strong {
+    color: #000000;
+}
+
+.theme-dark .contact-info strong {
+    color: #ffffff;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #555;
+}
+
+.theme-light .contact-form label {
+    color: #555555;
+}
+
+.theme-dark .contact-form label {
+    color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.theme-light .contact-form input,
+.theme-light .contact-form textarea {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.theme-dark .contact-form input,
+.theme-dark .contact-form textarea {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-light .contact-form button {
+    background-color: #007bff;
+}
+
+.theme-dark .contact-form button {
+    background-color: #4a90e2;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.copy-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.copy-icon:hover {
+    color: #0056b3;
+}
+
+.copied-message {
+    margin-top: 10px;
+    color: green;
+}
+.contact-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* ajustez la marge selon vos besoins */
+}
