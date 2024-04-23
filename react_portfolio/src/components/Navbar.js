@@ -22,22 +22,22 @@ function Navbar() {
         };
     }, []);
 
-    const navbarStyle = {
-        backgroundColor: scrollPosition > 20 ?
-            (theme === 'light' ? 'rgba(51, 51, 51, 0.8)' : 'rgba(255, 255, 255, 0.8)')
-            : (theme === 'light' ? 'transparent' : 'transparent'),
-        transition: 'background-color 0.3s ease-in-out'
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
-        <nav className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'}`} style={navbarStyle}>
+        <nav className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'}`}>
             <div className="container">
                 <h1 className="logo">ESTABLET Teddy</h1>
                 <ul className="nav-links">
-                    <li><a href="#home">{t.home}</a></li>
-                    <li><a href="#about">{t.about}</a></li>
-                    <li><a href="#projects">{t.projects}</a></li>
-                    <li><a href="#contact">{t.contact}</a></li>
+                    <li><button onClick={() => scrollToSection('home')}>{t.home}</button></li>
+                    <li><button onClick={() => scrollToSection('about')}>{t.about}</button></li>
+                    <li><button onClick={() => scrollToSection('projects')}>{t.projects}</button></li>
+                    <li><button onClick={() => scrollToSection('contact')}>{t.contact}</button></li>
                 </ul>
                 <button className="theme-toggle" onClick={toggleTheme}>{translations[language].themeToggle}</button>
                 <button className="language-toggle" onClick={toggleLanguage}>{translations[language].themeLangage}</button>
