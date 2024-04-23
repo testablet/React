@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from './LanguageToggle';
+import '../styles/Footer.css';
 
 function Footer() {
     const { language, translations } = useTranslation();
