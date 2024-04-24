@@ -1,33 +1,28 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './components/Login/AuthContext';
 import { LanguageProvider } from './components/LanguageToggle';
-import { ThemeProvider, useTheme } from './components/ThemeToggle';
-
-function AppContent() {
-    const { theme } = useTheme();
-    return (
-        <div className="App">
-            <Navbar />
-            <main className={`${theme}`}>
-                <section id="home"><Home /></section>
-                <section id="contact"><Contact /></section>
-            </main>
-            <Footer />
-        </div>
-    );
-}
+import { ThemeProvider } from './components/ThemeToggle';
+import AppContent from './AppContent';
+import Login from './components/Login/Login';
+// import Manage from './components/Manage';
 
 function App() {
     return (
-        <ThemeProvider>
-            <LanguageProvider>
-                <AppContent />
-            </LanguageProvider>
-        </ThemeProvider>
+        <Router>
+            <AuthProvider>
+                <LanguageProvider>
+                    <ThemeProvider>
+                        <Routes>
+                            <Route path="/" element={<AppContent />} />
+                            <Route path="/login" element={<Login />} />
+                            {/*<Route path="/manage" element={<Manage />} />*/}
+                        </Routes>
+                    </ThemeProvider>
+                </LanguageProvider>
+            </AuthProvider>
+        </Router>
     );
 }
 

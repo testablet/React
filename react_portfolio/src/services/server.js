@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const sequelize = require('./db');
+const User = require('./User');
 
 const app = express();
 const PORT = 3001;
@@ -46,6 +48,15 @@ app.post('/send-email', async (req, res) => {
         return res.status(500).json({ message: 'Erreur lors de l\'envoi de l\'e-mail' });
     }
 });
+
+// Synchronisation de la table 'users' avec la base de données
+User.sync({ force: false })
+    .then(() => {
+        console.log('La table des utilisateurs a été synchronisée avec la base de données.');
+    })
+    .catch((error) => {
+        console.error('Erreur lors de la synchronisation de la table des utilisateurs:', error);
+    });
 
 app.listen(PORT, () => {
     console.log(`Serveur lancé sur le port ${PORT}`);

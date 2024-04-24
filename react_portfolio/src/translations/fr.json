@@ -6,10 +6,12 @@
     "contact": "Contact",
     "theme": "Thème"
   },
+
   "home": {
     "welcome": "Bienvenue sur mon portfolio",
     "description": "Je suis étudiant en master de développement logiciel."
   },
+
   "contact": {
     "title" : "Contactez-moi",
     "phone" : "Téléphone",
@@ -19,9 +21,32 @@
     "send": "Envoyer",
     "copiedMessage" : "Copié"
   },
+
   "themeToggle": "Thème",
   "themeLangage": "Langue",
+  "themeLogin": "Connexion",
+
   "copyright" : "Copyright © 2024 - Tous droits réservés",
-  "successMessage": "Votre message à été envoyé avec succès",
-  "errorMessage": "Une erreur à été détecté"
+
+  "successMessage": "Votre message a été envoyé avec succès",
+  "errorMessage": "Une erreur a été détectée",
+
+  "manage": {
+    "title": "Gérer",
+    "button": "Se déconnecter"
+  },
+
+  "login": {
+    "loginTitle": "Connexion",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Mot de passe",
+    "loginButton": "Se connecter",
+    "forgotPassword": "Mot de passe oublié?",
+    "resetPasswordTitle": "Réinitialiser le mot de passe",
+    "sendMailButton": "Envoyer le mail",
+    "backToLogin": "Retour à la connexion",
+    "loginSuccess": "Connexion réussie",
+    "passwordReset": "Email de réinitialisation envoyé",
+    "message": "Message"
+  }
 }
