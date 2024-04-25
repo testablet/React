@@ -7,13 +7,82 @@
     "theme": "Theme"
   },
   "home": {
-    "welcome": "Welcome to my portfolio",
-    "description": "I am a master's student in software development."
+    "welcome": "ESTABLET TEDDY",
+    "description": "Full Stack Developer Apprentice | Student-Entrepreneur"
   },
+
+  "about": {
+    "descriptionTitle": "Who Am I",
+    "description": "Hello, I am Teddy Establet, an entrepreneurial student supported by Pépite Provence. In 2022, I founded AMC Numérique, a company specializing in digital marketing and communication consulting. Currently pursuing a master's degree in software development at ESIMed, I am completing my internship at GCC-Med, a database architecture firm. Additionally, I serve as the president of Summer Riviera Auto (SRA) and hold the CEO position at Saveurs de chez nous.",
+    "skillsTitle": "Skills",
+    "skills": [
+      "Web Development",
+      "Back-end",
+      "Node.js",
+      "Symfony",
+      "Front-end",
+      "Twig",
+      "Bootstrap",
+      "React",
+      "Database Management",
+      "Postgresql",
+      "Mariadb"
+    ],
+
+    "experiencesTitle": "Experiences",
+    "experiences": [
+      {
+        "title": "Apprentice Manager of Digital Solutions and Data",
+        "company": "GCC-Med",
+        "date": "2023 - 2025"
+      },
+      {
+        "title": "Entrepreneur",
+        "company": "AMC Digital",
+        "date": "2022 - Present"
+      },
+      {
+        "title": "President of Association",
+        "company": "Summer Riviera Auto [SRA]",
+        "date": "2024"
+      },
+      {
+        "title": "Managing Partner",
+        "company": "Flavors From Home",
+        "date": "2024"
+      }
+    ],
+
+
+    "diplomesTitle": "Degrees",
+    "diplomes": [
+      {
+        "title": "Master's in Software Development",
+        "university": "ESIMed",
+        "date": "2023 - 2025"
+      },
+      {
+        "title": "Bachelor's in Web & Mobile Development",
+        "university": "ESIMed",
+        "date": "2022 - 2023"
+      },
+      {
+        "title": "BTS in Digital Systems, IT & Networks",
+        "university": "St Jean Baptiste de LaSalle Avignon",
+        "date": "2020 - 2022"
+      }
+    ]
+
+  },
+
+
   "contact": {
     "title" : "Contact",
-    "phone" : "Phone",
+    "titlePhone" : "Phone",
+    "phoneNum" : "06 69 21 07 48",
+    "titleMail": "Mail",
     "mail": "Mail",
+    "mailText": "teddy.establet@amcnumerique.com",
     "name" : "Name",
     "text" : "Message",
     "send": "Send",

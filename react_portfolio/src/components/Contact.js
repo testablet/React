@@ -5,6 +5,7 @@ import ContactForm from './ContactForm';
 import { useTheme } from "./ThemeToggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
     const { language, translations } = useTranslation();
@@ -33,19 +34,24 @@ function Contact() {
             <div className="contact-container">
                 <h2>{t.title}</h2>
                 <div className="contact-info">
-                    <p><strong>{t.phone}: </strong> 06 69 21 07 48</p>
-                    <div className="contact-email" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <p onClick={() => copyToClipboard(t.mail)} style={{ cursor: 'pointer', marginRight: '10px' }}>
-                            <strong>{t.mail}:</strong> teddy.establet@amcnumerique.com
+                    <p><strong>{t.titlePhone}: </strong>{t.phoneNum}</p>
+                    <div className="contact-email">
+                        <p onClick={() => copyToClipboard(t.mailText)} className="contact-text" style={{ cursor: 'pointer' }}>
+                            <strong>{t.titleMail}: </strong>{t.mailText}
                         </p>
                         <FontAwesomeIcon
                             icon={faEnvelope}
+                            className="contact-icon"
                             style={{ color: copied ? (theme === 'light' ? '#333333' : '#ffffff') : (theme === 'light' ? '#3333cc' : '#6699ff'), cursor: 'pointer' }}
                             onClick={() => copyToClipboard(t.mail)}
                         />
-                        {copied && <span style={{ marginLeft: '5px', color: theme === 'light' ? '#333333' : '#ffffff' }}>{t.copiedMessage}</span>}
+                        {copied && <span className="copied-message">{t.copiedMessage}</span>}
                     </div>
-                    <p><strong><a href="https://www.linkedin.com/in/teddy-establet-b783b41b6/">LinkedIn</a></strong></p>
+                    <FontAwesomeIcon
+                        icon={faLinkedinIn}
+                        className="linkedin-icon"
+                        onClick={() => window.open("https://www.linkedin.com/in/teddy-establet-b783b41b6/", "_blank")}
+                    />
                 </div>
                 <ContactForm/>
             </div>
