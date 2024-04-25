@@ -1,37 +1,28 @@
 /* Contact styles */
 .contact {
     margin-top: 0;
+    padding-top: 10%;
+    padding-bottom: 2%;
 }
+
 .contact-container {
     max-width: 800px;
     margin: 50px auto;
     margin-top: 0;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .theme-light .contact-container {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    color: #333;
 }
 
 .theme-dark .contact-container {
-    background-color: #333333;
-    border: 1px solid #555555;
-}
-
-.contact-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.theme-light .contact-card {
-    background-color: #ffffff;
-}
-
-.theme-dark .contact-card {
-    background-color: #444444;
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 .contact-info {
@@ -39,61 +30,87 @@
     text-align: center;
 }
 
-.contact-info p {
+.contact-info p,
+.contact-info strong {
     margin: 15px 0;
     font-size: 18px;
     color: #333;
 }
 
-.theme-light .contact-info p {
-    color: #333333;
+.contact-email,
+.contact-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-.theme-dark .contact-info p {
-    color: #ffffff;
+.contact-email p,
+.contact-linkedin a {
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #555;
 }
 
-.contact-info a {
+.contact-icon,
+.linkedin-icon {
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.contact-icon:hover,
+.linkedin-icon:hover {
     color: #007bff;
-    text-decoration: none;
 }
 
-.theme-light .contact-info a {
-    color: #007bff;
+.copied-message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #28a745;
 }
 
-.theme-dark .contact-info a {
-    color: #4a90e2;
+.linkedin-icon {
+    margin-left: 5px;
+    color: #0077b5; /* Couleur LinkedIn */
+    transition: color 0.3s ease;
 }
 
-.contact-info strong {
-    color: #000000;
+.linkedin-icon:hover {
+    color: #005285; /* Couleur Hover LinkedIn */
 }
 
-.theme-light .contact-info strong {
-    color: #000000;
+.contact-email p:hover,
+.contact-linkedin a:hover {
+    text-decoration: underline;
 }
 
-.theme-dark .contact-info strong {
-    color: #ffffff;
+.contact-space {
+    height: 40px;
 }
 
 .contact-form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }
 
-.contact-form label {
+.theme-light .contact-form label {
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
     color: #555;
 }
 
-.theme-light .contact-form label {
-    color: #555555;
+.theme-dark .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #ffffff;
 }
 
-.theme-dark .contact-form label {
+.theme-dark .contact-info p,
+.theme-dark .contact-info strong {
     color: #ffffff;
 }
 
@@ -102,21 +119,18 @@
     width: 100%;
     padding: 12px;
     margin-top: 5px;
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
-.theme-light .contact-form input,
-.theme-light .contact-form textarea {
+.contact-form input:focus,
+.contact-form textarea:focus {
     background-color: #ffffff;
-    color: #333333;
-}
-
-.theme-dark .contact-form input,
-.theme-dark .contact-form textarea {
-    background-color: #555555;
-    color: #ffffff;
+    border-color: #007bff;
+    outline: none;
 }
 
 .contact-form button {
@@ -130,36 +144,40 @@
     transition: background-color 0.3s ease;
 }
 
-.theme-light .contact-form button {
-    background-color: #007bff;
-}
-
-.theme-dark .contact-form button {
-    background-color: #4a90e2;
-}
-
 .contact-form button:hover {
     background-color: #0056b3;
 }
 
 .copy-icon {
     margin-left: 10px;
-    cursor: pointer;
-    color: #007bff;
-    transition: color 0.3s ease;
-}
-
-.copy-icon:hover {
-    color: #0056b3;
 }
 
 .copied-message {
-    margin-top: 10px;
-    color: green;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #28a745;
 }
+
 .contact-email {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px; /* ajustez la marge selon vos besoins */
+    margin-top: 15px;
+}
+
+.contact-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contact-linkedin a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-linkedin a:hover {
+    color: #0056b3;
 }
