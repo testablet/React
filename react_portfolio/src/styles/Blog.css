@@ -1,0 +1,184 @@
+/* Styles généraux */
+.blog{
+    margin-top: 0;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 40px;
+    position: relative;
+    color: #333;
+}
+
+.theme-light .blog,
+.theme-light .blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 40px;
+    background-color: #ffffff;
+    position: relative;
+    color: #333;
+}
+
+/* Thème sombre */
+.theme-dark .blog,
+.theme-dark .blog-container {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Liste des derniers posts */
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Carte d'un post */
+.post-card {
+    width: calc(33.33% - 50px);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    transition: padding 0.3s ease;
+}
+
+.post-details.expanded .post-card {
+    width: 100%;
+    max-width: 900px;
+}
+
+.post-details.expanded h2 {
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .post-card {
+        width: calc(33.33% - 20px)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-card {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Thème sombre pour les cartes de post */
+.theme-dark .post-card {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Bouton Détails */
+.post-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Thème sombre pour le bouton Détails */
+.theme-dark .post-card button {
+    background-color: #28a745;
+}
+
+/* Hover sur le bouton Détails */
+.post-card button:hover {
+    filter: brightness(0.8);
+}
+
+/* Bouton Modifier */
+.edit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+/* Bouton Supprimer */
+.delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Hover sur les boutons Modifier et Supprimer */
+.edit-button:hover,
+.delete-button:hover {
+    filter: brightness(0.8);
+}
+
+/* Édition d'un post */
+.post-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Bouton Enregistrer dans l'édition d'un post */
+.post-details button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.post-details button:hover {
+    filter: brightness(0.8);
+}
+
+/* Styles pour les métadonnées des posts */
+.post-metadata {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.post-metadata .small-text {
+    font-size: 12px;
+}
