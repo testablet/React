@@ -75,6 +75,16 @@
     ]
 
   },
+  "blog": {
+    "title": "Blog",
+    "tags": "Tags : ",
+    "reactions": "Reaction : ",
+    "textEdit": "Edit the content of ",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete"
+
+  },
 
   "contact": {
     "title" : "Contact",

@@ -70,6 +70,16 @@
     ]
   },
 
+  "blog": {
+    "title": "Blog",
+    "tags": "Tags : ",
+    "reactions": "Réaction : ",
+    "textEdit": "Modifier le contenu de ",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer"
+  },
+
   "home": {
     "nameandlastname": "ESTABLET TEDDY",
     "description": "Apprenti Développeur Full Stack | Étudiant-Entrepreneur"

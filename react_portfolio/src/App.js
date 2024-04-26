@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About'
+import Blog from "./components/Blog";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { LanguageProvider } from './components/LanguageToggle';
@@ -16,6 +17,7 @@ function AppContent() {
             <main className={`${theme === 'light' ? 'theme-light' : 'theme-dark'}}`}>
                 <section id="home"><Home/></section>
                 <section id="about"><About/></section>
+                <section id="blog"><Blog/></section>
                 <section id="contact"><Contact/></section>
             </main>
             <Footer/>
