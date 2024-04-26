@@ -98,8 +98,6 @@ function PostDetails({post, handleEditPost, handleDeletePost}) {
 function Blog() {
     const [posts, setPosts] = useState([]);
     const [selectedPost, setSelectedPost] = useState(null);
-    const { language, translations } = useTranslation();
-    const t = translations[language].blog;
 
     useEffect(() => {
         fetch('https://dummyjson.com/posts')

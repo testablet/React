@@ -66,7 +66,7 @@
     transition: padding 0.3s ease;
 }
 
-post-details.expanded .post-card {
+.post-details.expanded .post-card {
     width: 100%;
     max-width: 900px;
 }
