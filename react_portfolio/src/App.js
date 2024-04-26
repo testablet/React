@@ -14,11 +14,11 @@ function AppContent() {
         <div className="App content">
             <Navbar />
             <main className={`${theme === 'light' ? 'theme-light' : 'theme-dark'}}`}>
-                <section id="home"><Home /></section>
-                <section id="about"><About /></section>
-                <section id="contact"><Contact /></section>
+                <section id="home"><Home/></section>
+                <section id="about"><About/></section>
+                <section id="contact"><Contact/></section>
             </main>
-            <Footer />
+            <Footer/>
         </div>
     );
 }

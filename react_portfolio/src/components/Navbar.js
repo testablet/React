@@ -38,12 +38,23 @@ function Navbar() {
     return (
         <nav ref={navRef} className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'} ${navbarClass}`}>
             <div className="container">
-                <h1 className="logo">ESTABLET Teddy</h1>
+                <h1 className="logo">{translations[language].home.nameandlastname}</h1>
                 <ul className="nav-links">
-                    <li><button onClick={() => scrollToSection('home')}>{t.home}</button></li>
-                    <li><button onClick={() => scrollToSection('about')}>{t.about}</button></li>
-                    <li><button onClick={() => scrollToSection('projects')}>{t.projects}</button></li>
-                    <li><button onClick={() => scrollToSection('contact')}>{t.contact}</button></li>
+                    <li>
+                        <button onClick={() => scrollToSection('home')}>{t.home}</button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollToSection('about')}>{t.about}</button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollToSection('projects')}>{t.projects}</button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollToSection('blog')}>{t.blog}</button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollToSection('contact')}>{t.contact}</button>
+                    </li>
                 </ul>
                 <button className="theme-toggle" onClick={toggleTheme}>{translations[language].themeToggle}</button>
                 <button className="language-toggle" onClick={toggleLanguage}>{translations[language].themeLangage}</button>

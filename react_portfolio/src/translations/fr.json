@@ -3,6 +3,7 @@
     "home": "Accueil",
     "about": "À propos",
     "projects": "Projets",
+    "blog": "Blog",
     "contact": "Contact",
     "theme": "Thème"
   },
@@ -70,7 +71,7 @@
   },
 
   "home": {
-    "welcome": "ESTABLET TEDDY",
+    "nameandlastname": "ESTABLET TEDDY",
     "description": "Apprenti Développeur Full Stack | Étudiant-Entrepreneur"
   },
   "contact": {

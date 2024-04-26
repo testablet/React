@@ -16,7 +16,12 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.theme-dark .about-container,
+
+.theme-dark .about-container{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
 .theme-dark .skill-category,
 .theme-dark .diplome-card,
 .theme-dark .experience-card{
