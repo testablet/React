@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from '../LanguageToggle';
 import { useTheme } from "../ThemeToggle";
 import '../../styles/Navbar.css';
-import '../styles/Navbar.css';
 
 function Navbar() {
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const [navbarClass, setNavbarClass] = useState('');
     const { language, translations, toggleLanguage } = useTranslation();
     const { theme, toggleTheme } = useTheme();
     const t = translations[language].navbar;
@@ -59,6 +58,9 @@ function Navbar() {
                     </li>
                     <li>
                         <button onClick={() => scrollToSection('projects')}>{t.projects}</button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollToSection('blog')}>{t.blog}</button>
                     </li>
                     <li>
                         <button onClick={redirectToHome}>{t.contact}</button>

@@ -5,7 +5,7 @@ import { useTheme } from "../ThemeToggle";
 import '../../styles/Navbar.css';
 
 function Navbar() {
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const [ setScrollPosition] = useState(0);
     const { language, translations, toggleLanguage } = useTranslation();
     const { theme, toggleTheme } = useTheme();
     const t = translations[language].navbar;
@@ -48,6 +48,9 @@ function Navbar() {
                     </li>
                     <li>
                         <button onClick={() => scrollToSection('projects')}>{t.projects}</button>
+                    </li>
+                    <li>
+                        <button onClick={() => scrollToSection('blog')}>{t.blog}</button>
                     </li>
                     <li>
                         <button onClick={() => scrollToSection('contact')}>{t.contact}</button>

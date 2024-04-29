@@ -6,7 +6,6 @@ import { LanguageProvider } from './components/LanguageToggle';
 import { ThemeProvider } from './components/ThemeToggle';
 import AppContent from './AppContent';
 import Login from './components/Login/Login';
-// import Manage from './components/Manage';
 
 function App() {
     return (

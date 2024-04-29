@@ -4,9 +4,7 @@
     align-items: center;
     min-height: 100vh;
     padding: 80px 40px;
-    background-color: #f9f9f9;
     position: relative;
-    color: #333;
 }
 
 .theme-light .about-container {
@@ -20,6 +18,8 @@
 .theme-dark .about-container{
     background-color: #1a1a1a;
     color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .theme-dark .skill-category,

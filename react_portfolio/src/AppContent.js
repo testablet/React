@@ -6,6 +6,8 @@ import Navbar from './components/NavBar/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import About from "./components/About";
+import Blog from "./components/Blog";
 
 function AppContent() {
     const { isAuthenticated } = useAuth();
@@ -18,10 +20,12 @@ function AppContent() {
         <div className="App">
             <Navbar />
             <main>
-                <section id="home"><Home /></section>
-                <section id="contact"><Contact /></section>
+                <section id="home"><Home/></section>
+                <section id="about"><About/></section>
+                <section id="blog"><Blog/></section>
+                <section id="contact"><Contact/></section>
             </main>
-            <Footer />
+            <Footer/>
         </div>
     );
 }
