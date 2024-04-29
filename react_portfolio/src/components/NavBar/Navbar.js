@@ -5,7 +5,7 @@ import { useTheme } from "../ThemeToggle";
 import '../../styles/Navbar.css';
 
 function Navbar() {
-    const [ setScrollPosition] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
     const { language, translations, toggleLanguage } = useTranslation();
     const { theme, toggleTheme } = useTheme();
     const t = translations[language].navbar;
@@ -22,7 +22,7 @@ function Navbar() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [setScrollPosition]);
+    }, []);
 
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
