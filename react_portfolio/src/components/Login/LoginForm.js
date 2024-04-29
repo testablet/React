@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 import "../../styles/Login/Login.css"
 import { useAuth } from './AuthContext';
 import { useTranslation } from '../LanguageToggle';
@@ -7,7 +9,7 @@ import { useTheme } from '../ThemeToggle';
 function LoginForm() {
     const { language, translations } = useTranslation();
     const { theme } = useTheme();
-    const { login, resetPassword } = useAuth();
+    const { resetPassword } = useAuth();
     const t = translations[language].login;
 
     const [email, setEmail] = useState('');
@@ -15,11 +17,29 @@ function LoginForm() {
     const [resetEmail, setResetEmail] = useState('');
     const [message, setMessage] = useState('');
     const [showResetPassword, setShowResetPassword] = useState(false);
+    const navigate = useNavigate();
 
     const handleLogin = async () => {
         try {
-            await login(email, password);
-            setMessage(t.loginSuccess);
+            const response = await fetch('https://dummyjson.com/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    username: email,
+                    password: password,
+                    expiresInMins: 30,
+                })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setMessage(t.loginSuccess);
+                Cookies.set('token', data.token);
+                navigate('/')
+            } else {
+                setMessage(data.error);
+            }
         } catch (error) {
             setMessage(error.message);
         }
