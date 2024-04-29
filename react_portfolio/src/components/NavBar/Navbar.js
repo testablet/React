@@ -22,7 +22,7 @@ function Navbar() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [setScrollPosition]);
 
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
