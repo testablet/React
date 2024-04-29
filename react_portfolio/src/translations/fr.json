@@ -8,6 +8,7 @@
     "theme": "Thème"
   },
 
+
   "about": {
     "descriptionTitle": "Qui suis-je",
     "description": "Bonjour, je suis Teddy Establet, un étudiant entrepreneur accompagné par Pépite Provence. En 2022, j'ai fondé AMC Numérique, une entreprise spécialisée dans l'accompagnement en marketing et communication numérique. Actuellement en master de développement logiciel à ESIMed, je réalise mon alternance chez GCC-Med, une entreprise d'architecture de bases de données. De plus, je préside l'association Summer Riviera Auto (SRA) et occupe le poste de CEO chez Saveurs de chez nous.",
@@ -84,6 +85,7 @@
     "nameandlastname": "ESTABLET TEDDY",
     "description": "Apprenti Développeur Full Stack | Étudiant-Entrepreneur"
   },
+
   "contact": {
     "title" : "Contactez-moi",
     "titlePhone" : "Téléphone",
@@ -96,9 +98,32 @@
     "send": "Envoyer",
     "copiedMessage" : "Copié"
   },
+
   "themeToggle": "Thème",
   "themeLangage": "Langue",
+  "themeLogin": "Connexion",
+
   "copyright" : "Copyright © 2024 - Tous droits réservés",
-  "successMessage": "Votre message à été envoyé avec succès",
-  "errorMessage": "Une erreur à été détecté"
+
+  "successMessage": "Votre message a été envoyé avec succès",
+  "errorMessage": "Une erreur a été détectée",
+
+  "manage": {
+    "title": "Gérer",
+    "button": "Se déconnecter"
+  },
+
+  "login": {
+    "loginTitle": "Connexion",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Mot de passe",
+    "loginButton": "Se connecter",
+    "forgotPassword": "Mot de passe oublié?",
+    "resetPasswordTitle": "Réinitialiser le mot de passe",
+    "sendMailButton": "Envoyer le mail",
+    "backToLogin": "Retour à la connexion",
+    "loginSuccess": "Connexion réussie",
+    "passwordReset": "Email de réinitialisation envoyé",
+    "message": "Message"
+  }
 }

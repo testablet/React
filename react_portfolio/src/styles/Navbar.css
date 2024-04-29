@@ -16,14 +16,16 @@
 .theme-light .nav-links a,
 .theme-light .nav-links button,
 .theme-light .theme-toggle,
-.theme-light .language-toggle {
+.theme-light .language-toggle,
+.theme-light .login-toggle{
     color: #333333;
     transition: color 0.3s ease;
 }
 
 .theme-light .nav-links button,
 .theme-light .theme-toggle,
-.theme-light .language-toggle {
+.theme-light .language-toggle,
+.theme-light .login-toggle{
     background-color: transparent;
     border: 1px solid #333333;
     border-radius: 20px;
@@ -34,7 +36,8 @@
 
 .theme-light .nav-links button:hover,
 .theme-light .theme-toggle:hover,
-.theme-light .language-toggle:hover {
+.theme-light .language-toggle:hover,
+.theme-light .login-toggle:hover{
     color: #ffd700;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #ffd700;
@@ -49,14 +52,16 @@
 .theme-dark .nav-links a,
 .theme-dark .nav-links button,
 .theme-dark .theme-toggle,
-.theme-dark .language-toggle {
+.theme-dark .language-toggle,
+.theme-dark .login-toggle{
     color: #ffffff;
     transition: color 0.3s ease;
 }
 
 .theme-dark .nav-links button,
 .theme-dark .theme-toggle,
-.theme-dark .language-toggle {
+.theme-dark .language-toggle,
+.theme-dark .login-toggle{
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 20px;
@@ -67,7 +72,8 @@
 
 .theme-dark .nav-links button:hover,
 .theme-dark .theme-toggle:hover,
-.theme-dark .language-toggle:hover {
+.theme-dark .language-toggle:hover,
+.theme-dark .login-toggle:hover{
     color: #ffd700;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #ffd700;

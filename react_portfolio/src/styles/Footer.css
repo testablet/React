@@ -1,3 +1,15 @@
+/* Footer */
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 /* Light theme styles */
 .theme-light {
     background-color: #ffffff;

@@ -1,30 +1,26 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useTranslation } from './LanguageToggle';
-import { useTheme } from "./ThemeToggle";
-import '../styles/Navbar.css';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from '../LanguageToggle';
+import { useTheme } from "../ThemeToggle";
+import '../../styles/Navbar.css';
 
 function Navbar() {
-    const [navbarClass, setNavbarClass] = useState('');
+    const [scrollPosition, setScrollPosition] = useState(0);
     const { language, translations, toggleLanguage } = useTranslation();
     const { theme, toggleTheme } = useTheme();
     const t = translations[language].navbar;
-    const navRef = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
             const position = window.pageYOffset;
-            if (position > 100) {
-                setNavbarClass('scrolled');
-            } else {
-                setNavbarClass('');
-            }
+            setScrollPosition(position);
         };
 
-        const navElement = navRef.current;
-        navElement.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
-            navElement.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
@@ -35,10 +31,14 @@ function Navbar() {
         }
     };
 
+    const redirectToLogin = () => {
+        navigate('/login');
+    };
+
     return (
-        <nav ref={navRef} className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'} ${navbarClass}`}>
+        <nav className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'}`}>
             <div className="container">
-                <h1 className="logo">{translations[language].home.nameandlastname}</h1>
+                <h1 className="logo">ESTABLET Teddy</h1>
                 <ul className="nav-links">
                     <li>
                         <button onClick={() => scrollToSection('home')}>{t.home}</button>
@@ -50,14 +50,13 @@ function Navbar() {
                         <button onClick={() => scrollToSection('projects')}>{t.projects}</button>
                     </li>
                     <li>
-                        <button onClick={() => scrollToSection('blog')}>{t.blog}</button>
-                    </li>
-                    <li>
                         <button onClick={() => scrollToSection('contact')}>{t.contact}</button>
                     </li>
                 </ul>
                 <button className="theme-toggle" onClick={toggleTheme}>{translations[language].themeToggle}</button>
-                <button className="language-toggle" onClick={toggleLanguage}>{translations[language].themeLangage}</button>
+                <button className="language-toggle"
+                        onClick={toggleLanguage}>{translations[language].themeLangage}</button>
+                <button className="login-toggle" onClick={redirectToLogin}>{translations[language].themeLogin}</button>
             </div>
         </nav>
     );

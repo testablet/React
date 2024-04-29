@@ -7,6 +7,7 @@
     "blog": "Blog",
     "theme": "Theme"
   },
+
   "home": {
     "nameandlastname": "ESTABLET TEDDY",
     "description": "Full Stack Developer Apprentice | Student-Entrepreneur"
@@ -98,9 +99,33 @@
     "send": "Send",
     "copiedMessage" : "Copy"
   },
+
   "themeToggle": "Theme",
   "themeLangage": "Langage",
+  "themeLogin": "Login",
+
   "copyright" : "Copyright © 2024 - All rights reserved",
+
   "successMessage": "Your message has been send with succes",
-  "errorMessage": "Error detected"
+  "errorMessage": "Error detected",
+
+  "manage": {
+    "title": "Manage",
+    "button": "Log out"
+  },
+
+  "login": {
+    "loginTitle": "Login",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password?",
+    "resetPasswordTitle": "Reset Password",
+    "sendMailButton": "Send Mail",
+    "backToLogin": "Back to Login",
+    "loginSuccess": "Login successful",
+    "passwordReset": "Password reset email sent",
+    "message": "Message"
+  }
+
 }
