@@ -1,0 +1,192 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 40px;
+    background-color: #f9f9f9;
+    position: relative;
+    color: #333;
+}
+
+.theme-light .about-container {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.theme-dark .about-container{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.theme-dark .skill-category,
+.theme-dark .diplome-card,
+.theme-dark .experience-card{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.section-content {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.section-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 50px;
+}
+
+.section-item {
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.8;
+}
+
+.section-item:before {
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.sub-section-list,
+.sub-sub-section-list {
+    list-style-type: none;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.sub-section-item,
+.sub-sub-section-item {
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.sub-section-item {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.skills-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.skill-category {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-category-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.skill-item {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.experiences-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.experience-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.experience-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.experience-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.experience-date {
+    font-size: 16px;
+    color: #777;
+}
+
+.diplomes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.diplome-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.diplome-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.diplome-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.diplome-date {
+    font-size: 16px;
+    color: #777;
+}

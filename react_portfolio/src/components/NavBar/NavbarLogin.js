@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from '../LanguageToggle';
 import { useTheme } from "../ThemeToggle";
 import '../../styles/Navbar.css';
+import '../styles/Navbar.css';
 
 function Navbar() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -10,17 +11,23 @@ function Navbar() {
     const { theme, toggleTheme } = useTheme();
     const t = translations[language].navbar;
     const navigate = useNavigate();
+    const navRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
             const position = window.pageYOffset;
-            setScrollPosition(position);
+            if (position > 100) {
+                setNavbarClass('scrolled');
+            } else {
+                setNavbarClass('');
+            }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        const navElement = navRef.current;
+        navElement.addEventListener('scroll', handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            navElement.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
@@ -40,9 +47,9 @@ function Navbar() {
     };
 
     return (
-        <nav className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'}`}>
+        <nav ref={navRef} className={`navbar ${theme === 'light' ? 'theme-dark' : 'theme-light'} ${navbarClass}`}>
             <div className="container">
-                <h1 className="logo">ESTABLET Teddy</h1>
+                <h1 className="logo">{translations[language].home.nameandlastname}</h1>
                 <ul className="nav-links">
                     <li>
                         <button onClick={redirectToHome}>{t.home}</button>

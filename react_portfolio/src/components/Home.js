@@ -10,7 +10,7 @@ function Home() {
 
     return (
         <div className={`home ${theme === 'light' ? 'theme-light' : 'theme-dark'}`}>
-            <h1>{t.welcome}</h1>
+            <h1>{t.nameandlastname}</h1>
             <p>{t.description}</p>
         </div>
     );
