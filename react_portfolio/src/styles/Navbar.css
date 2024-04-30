@@ -8,9 +8,15 @@
 }
 
 .theme-light .navbar {
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0); /* Couleur initiale transparente pour le thème light */
     color: #333333;
     border-bottom: 1px solid #e0e0e0;
+}
+
+.theme-dark .navbar {
+    background-color: rgba(255, 255, 255, 0); /* Couleur initiale transparente pour le thème dark */
+    color: #ffffff;
+    border-bottom: 1px solid #555555;
 }
 
 .theme-light .nav-links a,
@@ -41,12 +47,6 @@
     color: #ffd700;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #ffd700;
-}
-
-.theme-dark .navbar {
-    background-color: #333333;
-    color: #ffffff;
-    border-bottom: 1px solid #555555;
 }
 
 .theme-dark .nav-links a,
@@ -113,9 +113,4 @@
 .nav-links a:hover,
 .nav-links a:focus {
     color: #ffd700;
-}
-
-.scrolled {
-    background-color: #333;
-    transition: background-color 0.3s ease-in-out;
 }
