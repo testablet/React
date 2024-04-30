@@ -1,20 +1,19 @@
 {
   "navbar": {
-    "home": "Accueil",
-    "about": "À propos",
-    "projects": "Projets",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
     "blog": "Blog",
-    "contact": "Contact",
-    "theme": "Thème"
+    "contact": "Contacto",
+    "theme": "Tema"
   },
 
-
   "about": {
-    "descriptionTitle": "Qui suis-je",
-    "description": "Bonjour, je suis Teddy Establet, un étudiant entrepreneur accompagné par Pépite Provence. En 2022, j'ai fondé AMC Numérique, une entreprise spécialisée dans l'accompagnement en marketing et communication numérique. Actuellement en master de développement logiciel à ESIMed, je réalise mon alternance chez GCC-Med, une entreprise d'architecture de bases de données. De plus, je préside l'association Summer Riviera Auto (SRA) et occupe le poste de CEO chez Saveurs de chez nous.",
-    "skillsTitle": "Compétences",
+    "descriptionTitle": "¿Quién soy?",
+    "description": "Hola, soy Teddy Establet, un estudiante emprendedor acompañado por Pépite Provence. En 2022, fundé AMC Numérique, una empresa especializada en acompañamiento en marketing y comunicación digital. Actualmente estoy cursando un máster en desarrollo de software en ESIMed, y estoy realizando mi pasantía en GCC-Med, una empresa de arquitectura de bases de datos. Además, soy presidente de la asociación Summer Riviera Auto (SRA) y CEO de Saveurs de chez nous.",
+    "skillsTitle": "Habilidades",
     "skills": [
-      "Développement Web",
+      "Desarrollo web",
       "Back-end",
       "Node.js",
       "Symfony",
@@ -22,44 +21,44 @@
       "Twig",
       "Bootstrap",
       "React",
-      "Bases de Données",
+      "Bases de datos",
       "Postgresql",
       "Mariadb"
     ],
 
-    "experiencesTitle": "Expériences",
+    "experiencesTitle": "Experiencias",
     "experiences": [
       {
-        "title": "Apprenti Manager de solutions digitales et data",
+        "title": "Aprendiz de Manager de soluciones digitales y datos",
         "company": "GCC-Med",
         "date": "2023 - 2025"
       },
       {
-        "title": "Auto-Entrepreneur",
+        "title": "Autónomo",
         "company": "AMC Numérique",
-        "date": "2022 - aujourd'hui"
+        "date": "2022 - hoy"
       },
       {
-        "title": "Président d'association",
+        "title": "Presidente de asociación",
         "company": "Summer Riviera Auto [SRA]",
         "date": "2024"
       },
       {
-        "title": "Associé gérant",
+        "title": "Socio gerente",
         "company": "Saveurs De Chez Nous",
         "date": "2024"
       }
     ],
 
-    "diplomesTitle": "Diplômes",
+    "diplomesTitle": "Diplomas",
     "diplomes": [
       {
-        "title": "Master en développement logiciel",
+        "title": "Máster en desarrollo de software",
         "university": "ESIMed",
         "date": "2023 - 2025"
       },
       {
-        "title": "Bachelor en développement web & mobile",
+        "title": "Licenciatura en desarrollo web y móvil",
         "university": "ESIMed",
         "date": "2022 - 2023"
       },
@@ -73,57 +72,57 @@
 
   "blog": {
     "title": "Blog",
-    "tags": "Tags : ",
-    "reactions": "Réaction : ",
-    "textEdit": "Modifier le contenu de ",
-    "save": "Enregistrer",
-    "edit": "Modifier",
-    "delete": "Supprimer"
+    "tags": "Etiquetas: ",
+    "reactions": "Reacciones: ",
+    "textEdit": "Editar el contenido de ",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar"
   },
 
   "home": {
     "nameandlastname": "ESTABLET TEDDY",
-    "description": "Apprenti Développeur Full Stack | Étudiant-Entrepreneur"
+    "description": "Aprendiz Desarrollador Full Stack | Estudiante Emprendedor"
   },
 
   "contact": {
-    "title" : "Contactez-moi",
-    "titlePhone" : "Téléphone",
+    "title" : "Contáctame",
+    "titlePhone" : "Teléfono",
     "phoneNum" : "06 69 21 07 48",
-    "titleMail": "E-Mail",
+    "titleMail": "Correo electrónico",
     "mailText": "teddy.establet@amcnumerique.com",
-    "name" : "Nom",
-    "mail": "Mail",
-    "text" : "Message",
-    "send": "Envoyer",
-    "copiedMessage" : "Copié"
+    "name" : "Nombre",
+    "mail": "Correo",
+    "text" : "Mensaje",
+    "send": "Enviar",
+    "copiedMessage" : "Copiado"
   },
 
-  "themeToggle": "Thème",
-  "themeLangage": "Langue",
-  "themeLogin": "Connexion",
+  "themeToggle": "Tema",
+  "themeLangage": "Idioma",
+  "themeLogin": "Iniciar sesión",
 
-  "copyright" : "Copyright © 2024 - Tous droits réservés",
+  "copyright" : "Derechos de autor © 2024 - Todos los derechos reservados",
 
-  "successMessage": "Votre message a été envoyé avec succès",
-  "errorMessage": "Une erreur a été détectée",
+  "successMessage": "Su mensaje se ha enviado correctamente",
+  "errorMessage": "Se detectó un error",
 
   "manage": {
-    "title": "Gérer",
-    "button": "Se déconnecter"
+    "title": "Administrar",
+    "button": "Cerrar sesión"
   },
 
   "login": {
-    "loginTitle": "Connexion",
-    "emailPlaceholder": "Email",
-    "passwordPlaceholder": "Mot de passe",
-    "loginButton": "Se connecter",
-    "forgotPassword": "Mot de passe oublié?",
-    "resetPasswordTitle": "Réinitialiser le mot de passe",
-    "sendMailButton": "Envoyer le mail",
-    "backToLogin": "Retour à la connexion",
-    "loginSuccess": "Connexion réussie",
-    "passwordReset": "Email de réinitialisation envoyé",
-    "message": "Message"
+    "loginTitle": "Inicio de sesión",
+    "emailPlaceholder": "Correo electrónico",
+    "passwordPlaceholder": "Contraseña",
+    "loginButton": "Iniciar sesión",
+    "forgotPassword": "¿Olvidó su contraseña?",
+    "resetPasswordTitle": "Restablecer contraseña",
+    "sendMailButton": "Enviar correo electrónico",
+    "backToLogin": "Volver al inicio de sesión",
+    "loginSuccess": "Inicio de sesión exitoso",
+    "passwordReset": "Correo electrónico de restablecimiento enviado",
+    "message": "Mensaje"
   }
 }
