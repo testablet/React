@@ -1,0 +1,129 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact",
+    "theme": "Thème"
+  },
+
+
+  "about": {
+    "descriptionTitle": "Qui suis-je",
+    "description": "Bonjour, je suis Teddy Establet, un étudiant entrepreneur accompagné par Pépite Provence. En 2022, j'ai fondé AMC Numérique, une entreprise spécialisée dans l'accompagnement en marketing et communication numérique. Actuellement en master de développement logiciel à ESIMed, je réalise mon alternance chez GCC-Med, une entreprise d'architecture de bases de données. De plus, je préside l'association Summer Riviera Auto (SRA) et occupe le poste de CEO chez Saveurs de chez nous.",
+    "skillsTitle": "Compétences",
+    "skills": [
+      "Développement Web",
+      "Back-end",
+      "Node.js",
+      "Symfony",
+      "Front-end",
+      "Twig",
+      "Bootstrap",
+      "React",
+      "Bases de Données",
+      "Postgresql",
+      "Mariadb"
+    ],
+
+    "experiencesTitle": "Expériences",
+    "experiences": [
+      {
+        "title": "Apprenti Manager de solutions digitales et data",
+        "company": "GCC-Med",
+        "date": "2023 - 2025"
+      },
+      {
+        "title": "Auto-Entrepreneur",
+        "company": "AMC Numérique",
+        "date": "2022 - aujourd'hui"
+      },
+      {
+        "title": "Président d'association",
+        "company": "Summer Riviera Auto [SRA]",
+        "date": "2024"
+      },
+      {
+        "title": "Associé gérant",
+        "company": "Saveurs De Chez Nous",
+        "date": "2024"
+      }
+    ],
+
+    "diplomesTitle": "Diplômes",
+    "diplomes": [
+      {
+        "title": "Master en développement logiciel",
+        "university": "ESIMed",
+        "date": "2023 - 2025"
+      },
+      {
+        "title": "Bachelor en développement web & mobile",
+        "university": "ESIMed",
+        "date": "2022 - 2023"
+      },
+      {
+        "title": "BTS Système Numérique en Informatique & Réseaux",
+        "university": "St Jean Baptiste de LaSalle Avignon",
+        "date": "2020 - 2022"
+      }
+    ]
+  },
+
+  "blog": {
+    "title": "Blog",
+    "tags": "Tags : ",
+    "reactions": "Réaction : ",
+    "textEdit": "Modifier le contenu de ",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer"
+  },
+
+  "home": {
+    "nameandlastname": "ESTABLET TEDDY",
+    "description": "Apprenti Développeur Full Stack | Étudiant-Entrepreneur"
+  },
+
+  "contact": {
+    "title" : "Contactez-moi",
+    "titlePhone" : "Téléphone",
+    "phoneNum" : "06 69 21 07 48",
+    "titleMail": "E-Mail",
+    "mailText": "teddy.establet@amcnumerique.com",
+    "name" : "Nom",
+    "mail": "Mail",
+    "text" : "Message",
+    "send": "Envoyer",
+    "copiedMessage" : "Copié"
+  },
+
+  "themeToggle": "Thème",
+  "themeLangage": "Langue",
+  "themeLogin": "Connexion",
+
+  "copyright" : "Copyright © 2024 - Tous droits réservés",
+
+  "successMessage": "Votre message a été envoyé avec succès",
+  "errorMessage": "Une erreur a été détectée",
+
+  "manage": {
+    "title": "Gérer",
+    "button": "Se déconnecter"
+  },
+
+  "login": {
+    "loginTitle": "Connexion",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Mot de passe",
+    "loginButton": "Se connecter",
+    "forgotPassword": "Mot de passe oublié?",
+    "resetPasswordTitle": "Réinitialiser le mot de passe",
+    "sendMailButton": "Envoyer le mail",
+    "backToLogin": "Retour à la connexion",
+    "loginSuccess": "Connexion réussie",
+    "passwordReset": "Email de réinitialisation envoyé",
+    "message": "Message"
+  }
+}

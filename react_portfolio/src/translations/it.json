@@ -1,0 +1,129 @@
+{
+  "navbar": {
+    "home": "accoglienza",
+    "about": "Chi sono",
+    "projects": "Progetti",
+    "blog": "Blog",
+    "contact": "Contatto",
+    "theme": "Tema"
+  },
+
+
+  "about": {
+    "descriptionTitle": "Chi sono",
+    "description": "Ciao, sono Teddy Establet, uno studente imprenditore accompagnato da Pépite Provence. Nel 2022 ho fondato AMC Numérique, un'azienda specializzata nell'assistenza in marketing e comunicazione digitale. Attualmente sto frequentando un master in sviluppo software presso ESIMed, e sto svolgendo il mio tirocinio presso GCC-Med, un'azienda di architettura dei database. Inoltre, sono presidente dell'associazione Summer Riviera Auto (SRA) e ricopro il ruolo di CEO presso Saveurs de chez nous.",
+    "skillsTitle": "Competenze",
+    "skills": [
+      "Sviluppo Web",
+      "Back-end",
+      "Node.js",
+      "Symfony",
+      "Front-end",
+      "Twig",
+      "Bootstrap",
+      "React",
+      "Database",
+      "Postgresql",
+      "Mariadb"
+    ],
+
+    "experiencesTitle": "Esperienze",
+    "experiences": [
+      {
+        "title": "Apprendista Manager di soluzioni digitali e dati",
+        "company": "GCC-Med",
+        "date": "2023 - 2025"
+      },
+      {
+        "title": "Libero professionista",
+        "company": "AMC Numérique",
+        "date": "2022 - oggi"
+      },
+      {
+        "title": "Presidente di un'associazione",
+        "company": "Summer Riviera Auto [SRA]",
+        "date": "2024"
+      },
+      {
+        "title": "Socio gestore",
+        "company": "Saveurs De Chez Nous",
+        "date": "2024"
+      }
+    ],
+
+    "diplomesTitle": "Diplomi",
+    "diplomes": [
+      {
+        "title": "Master in sviluppo software",
+        "university": "ESIMed",
+        "date": "2023 - 2025"
+      },
+      {
+        "title": "Bachelor in sviluppo web & mobile",
+        "university": "ESIMed",
+        "date": "2022 - 2023"
+      },
+      {
+        "title": "BTS Sistema Digitale in Informatica & Reti",
+        "university": "St Jean Baptiste de LaSalle Avignon",
+        "date": "2020 - 2022"
+      }
+    ]
+  },
+
+  "blog": {
+    "title": "Blog",
+    "tags": "Tags: ",
+    "reactions": "Reazioni: ",
+    "textEdit": "Modifica il contenuto di ",
+    "save": "Salva",
+    "edit": "Modifica",
+    "delete": "Elimina"
+  },
+
+  "home": {
+    "nameandlastname": "ESTABLET TEDDY",
+    "description": "Apprendista Sviluppatore Full Stack | Studente imprenditore"
+  },
+
+  "contact": {
+    "title" : "Contattami",
+    "titlePhone" : "Telefono",
+    "phoneNum" : "06 69 21 07 48",
+    "titleMail": "E-Mail",
+    "mailText": "teddy.establet@amcnumerique.com",
+    "name" : "Nome",
+    "mail": "Mail",
+    "text" : "Messaggio",
+    "send": "Invia",
+    "copiedMessage" : "Copiato"
+  },
+
+  "themeToggle": "Tema",
+  "themeLangage": "Lingua",
+  "themeLogin": "Accesso",
+
+  "copyright" : "Copyright © 2024 - Tutti i diritti riservati",
+
+  "successMessage": "Il tuo messaggio è stato inviato con successo",
+  "errorMessage": "Si è verificato un errore",
+
+  "manage": {
+    "title": "Gestione",
+    "button": "Disconnettersi"
+  },
+
+  "login": {
+    "loginTitle": "Accesso",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "loginButton": "Accedi",
+    "forgotPassword": "Password dimenticata?",
+    "resetPasswordTitle": "Reimposta password",
+    "sendMailButton": "Invia email",
+    "backToLogin": "Torna al login",
+    "loginSuccess": "Accesso riuscito",
+    "passwordReset": "Email di ripristino inviata",
+    "message": "Messaggio"
+  }
+}
