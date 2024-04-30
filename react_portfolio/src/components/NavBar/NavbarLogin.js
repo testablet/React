@@ -57,9 +57,6 @@ function Navbar() {
                         <button onClick={() => scrollToSection('about')}>{t.about}</button>
                     </li>
                     <li>
-                        <button onClick={() => scrollToSection('projects')}>{t.projects}</button>
-                    </li>
-                    <li>
                         <button onClick={() => scrollToSection('blog')}>{t.blog}</button>
                     </li>
                     <li>
