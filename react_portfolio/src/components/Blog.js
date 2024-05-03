@@ -1,27 +1,66 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Blog.css';
 import { useTheme } from "./ThemeToggle";
-import {useTranslation} from "./LanguageToggle";
+import { useTranslation } from "./LanguageToggle";
 
-function LastTenPosts({ posts, showPostDetails }) {
+function LastTenPosts({ posts, showPostDetails, handleAddPost }) {
     const lastTenPosts = posts.slice(-10);
     const { language, translations } = useTranslation();
     const { theme } = useTheme();
     const t = translations[language].blog;
 
+    const [newPostTitle, setNewPostTitle] = useState('');
+    const [newPostBody, setNewPostBody] = useState('');
+    const [addingPost, setAddingPost] = useState(false);
+
+    const handleChange = (e) => {
+        setNewPostTitle(e.target.value);
+    };
+
+    const handleTextareaChange = (e) => {
+        setNewPostBody(e.target.value);
+    };
+
+    const handleSubmit = () => {
+        handleAddPost(newPostTitle, newPostBody);
+        setNewPostTitle('');
+        setNewPostBody('');
+        setAddingPost(false);
+    };
+
     return (
         <div className={`blog-container ${theme === 'dark' ? 'theme-dark' : 'theme-light'}`}>
-            <h1>Blog</h1>
+            <h1>{t.title}</h1>
+            <div className="add-post-container">
+                {addingPost ? (
+                    <div>
+                        <input
+                            type="text"
+                            placeholder={t.newPostTitlePlaceholder}
+                            value={newPostTitle}
+                            onChange={handleChange}
+                        />
+                        <textarea
+                            placeholder={t.newPostBodyPlaceholder}
+                            value={newPostBody}
+                            onChange={handleTextareaChange}
+                        />
+                        <button onClick={handleSubmit}>{t.addPost}</button>
+                    </div>
+                ) : (
+                    <button onClick={() => setAddingPost(true)}>{t.addPost}</button>
+                )}
+            </div>
             <div className="post-list">
                 {lastTenPosts.map(post => (
                     <div key={post.id} className="post-card">
                         <h3>{post.title}</h3>
                         <p>{post.body}</p>
                         <div className="post-metadata">
-                            <p>{t.tags}<span className="small-text">{post.tags.join(', ')}</span></p>
+                            <p>{t.tags}{post.tags ? post.tags.join(', ') : ''}</p>
                             <p>{t.reactions}<span className="small-text">{post.reactions}</span></p>
                         </div>
-                        <button onClick={() => showPostDetails(post.id)}>Détails</button>
+                        <button onClick={() => showPostDetails(post.id)}>{t.details}</button>
                     </div>
                 ))}
             </div>
@@ -29,7 +68,7 @@ function LastTenPosts({ posts, showPostDetails }) {
     );
 }
 
-function PostDetails({post, handleEditPost, handleDeletePost}) {
+function PostDetails({ post, handleEditPost, handleDeletePost }) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedContent, setEditedContent] = useState(post.body);
     const [isExpanded, setIsExpanded] = useState(false);
@@ -80,7 +119,7 @@ function PostDetails({post, handleEditPost, handleDeletePost}) {
                         <h2>{post.title}</h2>
                         <p>{post.body}</p>
                         <div className="post-metadata">
-                            <p>{t.tags}{post.tags.join(', ')}</p>
+                            <p>{t.tags}{post.tags ? post.tags.join(', ') : ''}</p>
                             <p>{t.reactions}{post.reactions}</p>
                         </div>
                         <div className="post-actions">
@@ -94,10 +133,12 @@ function PostDetails({post, handleEditPost, handleDeletePost}) {
     );
 }
 
-
 function Blog() {
     const [posts, setPosts] = useState([]);
     const [selectedPost, setSelectedPost] = useState(null);
+    const { language, translations } = useTranslation();
+    const { theme } = useTheme();
+    const t = translations[language].blog;
 
     useEffect(() => {
         fetch('https://dummyjson.com/posts')
@@ -133,6 +174,23 @@ function Blog() {
         console.log(`Suppression du post avec l'ID ${postId}`);
     };
 
+    const handleAddPost = (newPostTitle, newPostBody) => {
+        fetch('https://dummyjson.com/posts/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                title: newPostTitle,
+                body: newPostBody,
+                userId: 5
+            })
+        })
+            .then(res => res.json())
+            .then(newPost => {
+                setPosts([...posts, newPost]);
+                console.log('Nouveau post ajouté :', newPost);
+            });
+    };
+
     return (
         <div>
             {selectedPost ? (
@@ -142,7 +200,11 @@ function Blog() {
                     handleDeletePost={handleDeletePost}
                 />
             ) : (
-                <LastTenPosts posts={posts} showPostDetails={showPostDetails} />
+                <LastTenPosts
+                    posts={posts}
+                    showPostDetails={showPostDetails}
+                    handleAddPost={handleAddPost}
+                />
             )}
         </div>
     );

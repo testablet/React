@@ -7,7 +7,7 @@ import deTranslations from '../translations/it.json';
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState('en');
+    const [language, setLanguage] = useState('fr');
     const translations = {
         en: enTranslations,
         fr: frTranslations,

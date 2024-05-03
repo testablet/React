@@ -72,12 +72,16 @@
 
   "blog": {
     "title": "Blog",
-    "tags": "Etiquetas: ",
-    "reactions": "Reacciones: ",
+    "tags": "Etiquetas : ",
+    "reactions": "Reacciones : ",
     "textEdit": "Editar el contenido de ",
+    "details": "Detalles",
     "save": "Guardar",
     "edit": "Editar",
-    "delete": "Eliminar"
+    "delete": "Eliminar",
+    "addPost": "Agregar post",
+    "newPostTitlePlaceholder": "Nuevo título del post",
+    "newPostBodyPlaceholder": "Nuevo contenido del post"
   },
 
   "home": {
