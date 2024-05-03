@@ -73,13 +73,18 @@
 
   "blog": {
     "title": "Blog",
-    "tags": "Tags: ",
-    "reactions": "Reazioni: ",
+    "tags": "Tags : ",
+    "reactions": "Reazioni : ",
     "textEdit": "Modifica il contenuto di ",
+    "details": "Dettagli",
     "save": "Salva",
     "edit": "Modifica",
-    "delete": "Elimina"
+    "delete": "Elimina",
+    "addPost": "Aggiungi post",
+    "newPostTitlePlaceholder": "Nuovo titolo del post",
+    "newPostBodyPlaceholder": "Nuovo contenuto del post"
   },
+
 
   "home": {
     "nameandlastname": "ESTABLET TEDDY",

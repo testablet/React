@@ -81,10 +81,13 @@
     "tags": "Tags : ",
     "reactions": "Reaction : ",
     "textEdit": "Edit the content of ",
+    "details": "Details",
     "save": "Save",
     "edit": "Edit",
-    "delete": "Delete"
-
+    "delete": "Delete",
+    "addPost": "Add post",
+    "newPostTitlePlaceholder": "New title post",
+    "newPostBodyPlaceholder": "New body post"
   },
 
   "contact": {
